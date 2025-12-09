@@ -1,0 +1,9 @@
+<h2>simpsons</h2>
+
+@for (p of personajes; track p.id) {
+  <div class="card" [routerLink]="['/simpsons', p.id]">
+    <img [src]="p.image" alt="">
+    <h3>{{ p.name }}</h3>
+  </div>
+}
+
